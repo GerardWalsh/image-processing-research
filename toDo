@@ -1,0 +1,45 @@
+camera calib	
+determine 2D position 
+positional output yolo
+siamese tracker - input video 
+
+2nd - benchmarking concept : possible scenarios:occlusions, simple tracking, illimuniation, clutter, 
+	precison, recall, etc.  
+	reading in from default video file
+	record output (text file and video file)
+	useable dataset
+	what exists, 
+
+point cloud 6 DOF temporal tracker
+
+
+3rd yolo	
+	positiotnal info
+	algorithm flowchart
+	know where to make tweaks for positional info
+
+siamese 1st
+	get working with webcam
+
+benchmark object detectors
+
+focus is on human tracking (2d)
+3d will be human and something else
+
+occlusion
+size
+degrad	?
+illumination 
+Accuracy	
+Precision
+	mcct	lsart	cfcf gnet
+
+BDAT - object detection
+
+LSART - not feasible realtime (1 FPS) Titan X
+CFCF - not feasible realtime (1.7 FPS) Tesla K40 (200x200 target object)
+
+MCCT - to investigate - author claims 8 FPS (GTX1080) - implemented
+GNET to investigate
+
+Summarise dependencies of ECO

@@ -1,0 +1,21 @@
+System
+	GTX1060 (notebook)
+	Intel i7 7th gen
+	Ubuntu 16.04
+	
+Fresh install Ubuntu
+
+Driver 
+	Installed via ubuntu software - 384.130
+		(Can be installed via command line (turned off X-server etc))
+		
+CUDA toolkit (9.0)
+	followed : https://gist.github.com/zhanwenchen/e520767a409325d9961072f666815bb8, from section 2
+	
+cuDNN (7.0.5 Dec 5, 2017)
+	followed : https://gist.github.com/zhanwenchen/e520767a409325d9961072f666815bb8, from ´install cuDNN 7.0´ section
+	important to install 7.0.X - previously installed 7.1.X, used : https://github.com/williamFalcon/tensorflow-gpu-install-ubuntu-16.04/issues/8, to correct downgrade to 7.0.X
+
+openCV
+	used : https://www.pyimagesearch.com/2016/07/11/compiling-opencv-with-cuda-support/
+	

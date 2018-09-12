@@ -1,0 +1,15 @@
+Generic object trackers
+	RGB - do not make use of depth information
+	No prior knowleadge of object to be tracked
+	Therefore lack robustness (dropping of object) and accuracy (overlap of bounding box)
+	Highest performing trackers are not real-time, low frame rates ( < 10 FPS) on powerful hardware, not utilising hardware efficiently 
+	Struggle with occlusion of similar/same objects (people crossing each other/walking in front of each other)
+
+Can make use of more sensor data (RGBd)
+	Will aid in occlusion scenarios - system will be aware of occlusion due to depth change of during occlusion (person walking infront of another - depth map changes, as well as 2D spatial information)
+
+Can have idea of model desired to be tracked
+	Object detector/classifier (trained for specific instance, set of useful classes (not toothbrushes)) can inform object tracker of what object needs to tracked, where the object is
+	Tracking algorithm receives information from object detector/classifier/localisor regarding object and pulls CAD model from memory/file
+
+Can achieve higher image processing speeds as does not need to be able to discriminate between toothbrush on a table and a gymnast performing cartwheels

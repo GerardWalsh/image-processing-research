@@ -1,0 +1,7 @@
+caffe GPU install
+	http://gear.github.io/2017-03-30-caffe-gpu-installation/
+	Check openCV version, uncomment a line if using >= OpenCV 3
+	nvcc fatal : Unsupported gpu architecture 'compute_20 error?
+		https://askubuntu.com/questions/960238/nvcc-fatal-unsupported-gpu-architecture-compute-20
+		Use last answer from question
+	Change location of numpy library/ check location of numpy library
