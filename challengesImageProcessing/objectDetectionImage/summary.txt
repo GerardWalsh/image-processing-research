@@ -1,0 +1,6 @@
+team BDAT vasty superior - 2nd team only 10 categories won, with 0.13 lower AP
+	No pre-trained networks available for evalution
+
+Object detection in images is not useful for realtime scenarios
+	Too computationally expensive
+	Does not utilize flow of information from frame to frame

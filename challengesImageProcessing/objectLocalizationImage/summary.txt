@@ -1,0 +1,2 @@
+localization error lowest of team NUS-Qihoo_DPNs (CLS-LOC), classification error 0.01 higher than that of 2nd place
+	Also based on single image, not video based
