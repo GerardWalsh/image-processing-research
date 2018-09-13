@@ -1,1 +1,6 @@
 team IC&USYD, highest number of categories by far, also highest mean AP by 0.06
+	https://github.com/msracver/Deep-Feature-Flow
+	Implemented
+
+	https://github.com/msracver/Flow-Guided-Feature-Aggregation
+	Not implemented due to memory requirements
