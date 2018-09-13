@@ -69,7 +69,8 @@ Object detection/Classification
 		COCO challenge
 			YOLOV3
 				tinynets weights utilized - full YOLOV3 uses more than 6GB of GPU memory
-				YOLO performs as good as state of the art on mAP50 (overlap of .50 - Redmond argues higher overlap is indiscernbile to humans)s
+				YOLO performs as good as state of the art on mAP50 (overlap of .50 - Redmond argues higher overlap is indiscernbile to humans
+				~40 FPS
 
 	Nonimplemented object classifiers/detectors
 		ImageNet
