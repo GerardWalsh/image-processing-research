@@ -1,0 +1,57 @@
+Tracking paradigm
+	2D
+	Generic object tracking is ideal - State of the art approach for object tracking in a 2D space has no prior information of the object to be tracked
+		This leads to low accuracy, robustness especially to scenarios of occlusion and multiple instances
+		This is suboptimal - the human visual tracking system has knowleadge of the object to be tracked
+			Might not know exactly how the specific instance of object looks in various poses, viewpoints and levels of occlusion, we do have a general understanding of the object to be tracked and how it appears in different scenarios
+	As noted, this approach only utilizes 2D information, however in a 3 channel format (Width - Height - Depth) 
+		The human visual system relies on depth information (two sensors)
+	2D object tracking has well defined metrics, challenges and benchmarks
+		VOT - visual object tracking challenge
+			Realtime and overall challenge
+				Realtime - processes input faster than it receives input
+				Overall - Only judged on metrics of precison, robustness, accuracy, area under curve
+
+		MOT - multiple object tracking challenge
+
+	Implemented trackers
+		CMTgpu
+			scores high in occlusion according to VOT results, but not accurate
+			Does well with redetection
+			~80 FPS	
+		SiameseFC
+			Winner of VOT realtime challenge 2017
+			~40-60 FPS
+			Scores amongst highest overall performers in VOT challenge, but runs at a magnitude of order faster
+		RE3
+			Very fast, lightweight tracker, 70-100FPS
+			Investigated to be used amongst other navigation systems
+			Does not perform well, latches onto objects, redetection is very poor
+
+	Nonimplemented trackers
+			Not implemented due to low FPS ( < 5 FPS) on high end hardware (Server GPU)
+			chosen for their high scoring attributes for illumination change, occlusion
+			LSART 
+				Robust
+			CFCF 
+				Robust
+		
+Object detection/Classification
+	Similar problem case to generic object tracking
+		Differs in that we have a defined set of classes and that we seek to:
+			Given a single image, classify the object into a class (Classification)
+			Given a single image, classify the object into a class and localize the image (Classification+Localization)
+			Given a single image, localize and classify objects (Object detection)
+			Given a single image, segment pixel belonging to seperate classes 
+			Given a video stream, classify and locate objects 
+		In this instance we train the detectors on a given set of training examples of the defined classes and perform the above mentioned tasks on
+			Various datasets
+				ImageNet 2010 - Popular challenge	
+				Microsoft COCO(Common objects in Context) 2015 - images are of objects in their natural context 
+
+Problem at hand
+	We have information regarding what object is to be tracked
+		CAD model
+	We have a defined set of classes to be tracked
+		Not open ended set of objects
+	We have an array of sensor data available - RGB, RGBD, Point Clouds from LIDAR
