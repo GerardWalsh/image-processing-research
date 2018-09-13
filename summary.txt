@@ -59,6 +59,9 @@ Object detection/Classification
 				ImageNet 2010 - Popular challenge, no structure to images in dataset
 				Microsoft COCO(Common objects in Context) 2015 - images are of objects in their natural context 
 
+	Implemented object classifiers/detectors
+		
+
 Problem at hand
 	We have information regarding what object is to be tracked
 		CAD model
