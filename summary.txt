@@ -17,7 +17,7 @@ Tracking paradigm
 	Implemented trackers
 		CMTgpu
 			scores high in occlusion according to VOT 2017 results, but not accurate
-			Does well with redetection
+			Does well with redetection, poorly in clutter, vast viewpoint changes
 			~80 FPS	
 			Implemented in c++ (OpenCV) - webcam testing possible
 		SiameseFC
@@ -52,7 +52,7 @@ Object detection/Classification
 			Given a single image, classify the object into a class (Classification)
 			Given a single image, classify the object into a class and localize the image (Classification+Localization)
 			Given a single image, localize and classify objects (Object detection)
-			Given a single image, segment pixel belonging to seperate classes 
+			Given a single image, segment pixel belonging to seperate classes (Semantic segmentation)
 			Given a video stream, classify and locate objects 
 		In this task we train the detectors on a given set of training examples of the defined classes and perform the above mentioned tasks on
 			Various datasets
@@ -68,7 +68,28 @@ Object detection/Classification
 
 		COCO challenge
 			YOLOV3
-				tinynets weights - full YOLOV3 uses more than 6GB of GPU memory
+				tinynets weights utilized - full YOLOV3 uses more than 6GB of GPU memory
+				YOLO performs as good as state of the art on mAP50 (overlap of .50 - Redmond argues higher overlap is indiscernbile to humans)s
+
+	Nonimplemented object classifiers/detectors
+		ImageNet
+			Object detection
+				No pretrained weights for top-performing submission (BDAT)
+				Instructions for training weights
+			Classification + localization
+				No pretrained weights for top-performing submission (BDAT)
+				Instructions for training weights
+			Not feasible 
+				Above methods are operating on single images 
+				Not feasible (in a real-time situation) in terms of processing speed and does not utilize temporal information from video frames
+
+	Trade-off between speed and accuracy (As most things are)
+		Need to discern use case and determine what approach/algorithm is feasible
+			What are we looking to achieve from algorithm
+				Accurate bouding boxes or is 0.5 IOU acceptable
+		Networks can be retrained to be more lightweight/accurate
+			Network only has to discern between human and car door, etc. 
+
 
 Problem at hand
 	We have information regarding what object is to be tracked
