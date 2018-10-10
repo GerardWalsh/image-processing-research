@@ -1,0 +1,20 @@
+System
+	GTX1060 (notebook)
+	Intel i7 7th gen
+	Ubuntu 16.04
+
+Re3 tracker
+	Installed tensorflow + openCV via https://drive.google.com/open?id=1tlyHRTfZdjlOzfwjxjLfQR7hfaVHbmCeNf7bwI3Mm2E
+	Usewebcam demo.py
+
+Siamese Convnet tracker
+	Follow install guide
+		In requirements.txt 
+			Install latest libraries of numpy, scipy, tensorflow-gpu, matplotlib, not ones specified by author (Issue with matplotlib 1.3.1), with pip install scipy or pip install numpy etc (do not specify version)
+				Install Pillow 4.1.1 as specified by install guide
+	Make sure extracted cf_networks are not in subfolder
+		Must be pretrained/variousWeights.mat
+	For data
+		Must be data/validation/sequenceFolders
+		Remove readme from validation folder
+
