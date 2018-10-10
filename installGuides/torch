@@ -1,0 +1,20 @@
+System
+	GTX1060 (notebook)
+	Intel i7 7th gen
+	Ubuntu 16.04
+	
+
+Overall install process
+	https://dwijaybane.wordpress.com/2017/07/22/installing-torch-7-deep-learning-on-ubuntu-16-04
+
+Modification for building
+	https://github.com/torch/torch7/issues/1086
+
+Driver (410.48)
+
+CUDA toolkit (9.1) (Downgraded - two version installed)
+	https://tech.amikelive.com/node-859/installing-cuda-toolkit-9-2-on-ubuntu-16-04-fresh-install-install-by-removing-older-version-install-and-retain-old-version/
+	
+cuDNN (7.1.3)
+
+
