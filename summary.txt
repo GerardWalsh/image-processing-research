@@ -99,3 +99,13 @@ Problem at hand
 		Not open ended set of objects
 	We have an array of sensor data available - RGB, RGBD, Point Clouds from LIDAR
 	High accuracy is req
+
+Thoughts
+	Methods like Mask R-CNN are not entirely suited to us, what would be more suitable is
+		Train a detector/classifier to detect an instance of object from retrained network for narrowed down number of classes
+		Once instance is found, we can load CAD model
+		Can use feature extraction from best detector/classifier networks to align realword instance of object with CAD model
+		From there we estimate pose and 3D orientation
+		Use deep feature flow network to track object? Or an 2D object tracker
+	An optical flow operator can be used to detect motion in a region of an image and subsequently apply the detector/classifier to that region of the image
+	If lost, we can reapply optical flow to find moving objects or the detector on the whole image if there is no motion. 

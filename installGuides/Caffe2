@@ -1,0 +1,24 @@
+System
+	GTX1060 (notebook)
+	Intel i7 7th gen
+	Ubuntu 16.04
+	
+Fresh install Ubuntu
+
+Overall install process
+	https://tech.amikelive.com/node-706/comprehensive-guide-installing-caffe2-with-gpu-support-by-building-from-source-on-ubuntu-16-04/
+
+Driver (410.48)
+	https://tech.amikelive.com/node-731/how-to-properly-install-nvidia-graphics-driver-on-ubuntu-16-04/
+		
+CUDA toolkit (10.0)
+	https://tech.amikelive.com/node-669/guide-installing-cuda-toolkit-9-1-on-ubuntu-16-04/
+	
+cuDNN (7.3.1.20)
+	https://tech.amikelive.com/node-679/quick-tip-installing-cuda-deep-neural-network-7-cudnn-7-x-library-for-cuda-toolkit-9-1-on-ubuntu-16-04/, 
+
+openCV
+	sudo apt-get install libopencv-dev 
+
+Building Caffe2 from source will fail, libraries are missing (from build process)
+	Install as recommmended by terminal output
