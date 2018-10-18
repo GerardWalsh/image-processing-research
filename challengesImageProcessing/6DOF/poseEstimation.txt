@@ -1,0 +1,58 @@
+Pose estimation
+
+	BOP benchmark (proposed at ECCV '18)
+		https://arxiv.org/pdf/1808.08319.pdf
+		
+		Model-based (3D CAD model)
+		
+		RGB
+		
+			Learning-based
+				Deep Model-Based 6D Pose Refinement in RGB - 2018
+					http://openaccess.thecvf.com/content_ECCV_2018/papers/Fabian_Manhardt_Deep_Model-Based_6D_ECCV_2018_paper.pdf
+					Code still to be released (will be released)
+		RGB-D
+			
+			Point-pair features (perform best according BOP benchmark)
+				Detection and Fine 3D Pose Estimation of Texture-less Objects in RGB-D Images	
+					http://users.ics.forth.gr/~lourakis/publ/2015_iros_tless.pdf
+					No code released
+
+			6D Pose Estimation using an Improved Method based on Point Pair Features
+				https://arxiv.org/ftp/arxiv/papers/1802/1802.08516.pdf
+
+	No benchmark
+		Implicit 3D Orientation Learning for 6D Object Detection from RGB Images (ECCV '18 Best paper award)
+			http://openaccess.thecvf.com/content_ECCV_2018/papers/Martin_Sundermeyer_Implicit_3D_Orientation_ECCV_2018_paper.pdf
+	
+	
+Conferences
+	3DV - International conference on 3D Vision
+		http://3dv18.uniud.it/
+	
+	ECCV '18
+		https://eccv2018.org/
+
+Kitti dataset/benchmark
+
+	Autonomous driving dataset
+		LIDAR, RGBD sensors
+
+	3 classes
+		Car, cyclist, pedestrian
+
+	3 scenario rating for each class
+		easy, moderate, hard
+
+	State of the art
+		MV3D
+		Point fusion
+
+Pascal 3D+ - Benchmark for 3D object detection in the wild
+	Average Viewpoint Precision (AVP) - evalute object detection and pose estimation 
+		detector output correct iff bounding box overlap is larger than 50% AND the viewpoint is correct (i.e., the two viewpoint labels are the same in discrete viewpoint space or the distance between the two viewpoints is smaller than some threshold in continuous viewpoint space). The recall is the same for AP and AVP. 
+	
+Princeton modelnet40
+	40 classes
+
+SIXD Pose Estimation Challenge
