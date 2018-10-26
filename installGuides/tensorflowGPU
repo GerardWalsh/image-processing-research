@@ -19,3 +19,5 @@ cuDNN (7.0.5 Dec 5, 2017)
 openCV
 	used : https://www.pyimagesearch.com/2016/07/11/compiling-opencv-with-cuda-support/
 	
+
+https://alliseesolutions.wordpress.com/2016/09/08/install-gpu-tensorflow-from-sources-w-ubuntu-16-04-and-cuda-8-0/
