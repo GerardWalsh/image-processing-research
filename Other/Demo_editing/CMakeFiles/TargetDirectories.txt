@@ -1,3 +1,0 @@
-/home/gerrywalsh/Videos/Demo_editing/CMakeFiles/edit_cache.dir
-/home/gerrywalsh/Videos/Demo_editing/CMakeFiles/rebuild_cache.dir
-/home/gerrywalsh/Videos/Demo_editing/CMakeFiles/cmt.dir
